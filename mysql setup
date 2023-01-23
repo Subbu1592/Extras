@@ -1,0 +1,19 @@
+DATABASES = {  
+    'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'sql_tutorial',  
+        'USER': 'root',  
+        'PASSWORD': 'Subbu@1592',  
+        'HOST': '127.0.0.1',  
+        'PORT': '3306',  
+        'OPTIONS': {  
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        }  
+    }  
+}  
+
+
+
+mysql -u root -p (to enable mysql)
+pip3 install mysqlclient. (to install mysqlclient server)
+python manage.py migrate  (then migrate)
