@@ -13,5 +13,3 @@ MEDIA_URL = '/media/'
 
 
 
-#to add background image from static to css in django
- background-image: url("{{STATIC_URL}}images/12.jpg");
