@@ -15,6 +15,6 @@ DATABASES = {
 
 
 mysql -u root -p (to enable mysql)
-create database databasename (create database with name and add that name in settings.py)
+create database databasename; (create database with name and add that name in settings.py)
 pip3 install mysqlclient (to install mysqlclient server)
 python manage.py migrate  (then migrate)
