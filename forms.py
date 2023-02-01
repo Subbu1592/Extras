@@ -10,8 +10,15 @@ class InvoiceForm(ModelForm):
 
      
     <!-- in html page -->
+    
+    {% widget_tweaks %}
 <form action="/your-name/" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
+
+   
+    <!-- in settings.py (within installed apps) -->
+    
+    'widget_tweaks'
