@@ -12,17 +12,15 @@ class InvoiceForm(ModelForm):
     <!-- in html page -->
     
     {% widget_tweaks %}
-<form action="/your-name/" method="post">
-    {% csrf_token %}
-    
-    <div class="form-group">
-    <h6 class="text-light"> <i class="bi bi-reception-0" style="color: aliceblue;"></i> &nbsp; Name</h6>
-    {% render_field form.name class='form-control' %}
-</div><br>
-
-
-    <input type="submit" value="Submit">
-</form>
+   <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <h6 > <i class="bi bi-reception-0"></i> &nbsp; Name</h6>
+                {% render_field form.name class='form-control text-dark'  %}
+            </div><br>
+            
+            <input type="submit" value="Submit">
+        </form>
 
    
     <!-- in settings.py (within installed apps) -->
