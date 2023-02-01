@@ -14,7 +14,13 @@ class InvoiceForm(ModelForm):
     {% widget_tweaks %}
 <form action="/your-name/" method="post">
     {% csrf_token %}
-    {{ form }}
+    
+    <div class="form-group">
+    <h6 class="text-light"> <i class="bi bi-reception-0" style="color: aliceblue;"></i> &nbsp; Name</h6>
+    {% render_field form.name class='form-control' %}
+</div><br>
+
+
     <input type="submit" value="Submit">
 </form>
 
