@@ -9,3 +9,9 @@ class InvoiceForm(ModelForm):
         fields = ['bill_to','customer_gst_no','description','description2','description3','quantity','quantity2','quantity3','unit_price','unit_price2','unit_price3','amount','amount2','amount3','due_date1','due_date2','due_date3','due_amount1','due_amount2','due_amount3','gst_amount']
 
      
+    <!-- in html page -->
+<form action="/your-name/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
