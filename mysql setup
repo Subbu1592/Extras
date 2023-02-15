@@ -12,7 +12,7 @@ DATABASES = {
     }  
 }  
 
-
+export PATH=${PATH}:/usr/local/mysql/bin/       #to enabel the mysql path
 
 mysql -u root -p (to enable mysql)
 create database databasename; (create database with name and add that name in settings.py)
