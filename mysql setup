@@ -12,9 +12,17 @@ DATABASES = {
     }  
 }  
 
+
+
+import pymysql 
+pymysql.install_as_MySQLdb()    #in settings.py
+
+
+
 export PATH=${PATH}:/usr/local/mysql/bin/       #to enabel the mysql path
 
 mysql -u root -p (to enable mysql)
 create database databasename; (create database with name and add that name in settings.py)
 pip3 install mysqlclient (to install mysqlclient server)
 python manage.py migrate  (then migrate)
+pip3 install pymysql
