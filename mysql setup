@@ -1,3 +1,6 @@
+<!-- in settings.py -->
+
+
 DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
@@ -11,11 +14,16 @@ DATABASES = {
         }  
     }  
 }  
-
-
-
 import pymysql 
-pymysql.install_as_MySQLdb()    #in settings.py
+pymysql.install_as_MySQLdb()
+
+<!-- end of settings.py -->
+
+
+
+
+
+
 
 
 
