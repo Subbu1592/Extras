@@ -13,7 +13,13 @@ cd ~/.ssh           #get into that directory
 ssh-keygen -t ed25519 -C "subbusubhash1592@gmail.com"       #to create keygen
 
 
-to push an existing repository from the command line
+#to push an existing repository from the command line
 git remote add origin https://github.com/Subbu1592/m.git
 git branch -M main
 git push -u origin main
+
+
+# after some editing (after saving project in git (first commit)) if we want to update that to my repository we have to use
+git add .
+git commit -am 'second commit'
+git push
