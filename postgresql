@@ -17,3 +17,12 @@ psql postgres            # to getinto postgresql
 \c test                   # to get into test database
 
 CREATE DATABASE test;           #to create database
+
+
+
+
+#to create new user with password
+
+CREATE USER sammy WITH PASSWORD 'pa$$word';  #interminal after psql postgres    
+
+pip install psycopg2-binary         #install pip command
