@@ -8,3 +8,12 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+
+
+#in terminal
+psql postgres            # to getinto postgresql
+\l                      #to see the list of database
+\c test                   # to get into test database
+
+CREATE DATABASE test;           #to create database
