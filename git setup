@@ -3,3 +3,17 @@ $ git config --global user.email "you@youraddress.com"
 $ git config --global push.default matching
 $ git config --global alias.co checkout
 $ git init
+
+
+
+git add .   #to add everything into repository
+git commit -am 'initial commit'.  #first commit(first attempt to add it into repository)
+mkdir ~/.ssh      #create new directory
+cd ~/.ssh           #get into that directory
+ssh-keygen -t ed25519 -C "subbusubhash1592@gmail.com"       #to create keygen
+
+
+to push an existing repository from the command line
+git remote add origin https://github.com/Subbu1592/m.git
+git branch -M main
+git push -u origin main
