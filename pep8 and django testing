@@ -1,0 +1,16 @@
+# to install django pep8
+
+python3 -m pip install -U autopep8
+
+
+
+
+#for testing django models,views,API's and etc
+
+
+pip3 install pytest --django
+pip3 install pytest --cov
+
+pytest --cov-report html --cov=./
+
+#now check for htmlcov floder in root directory and within that browse index.html page there you can find the testing report
