@@ -27,7 +27,9 @@ pymysql.install_as_MySQLdb()
 
 
 
-export PATH=${PATH}:/usr/local/mysql/bin/       #to enabel the mysql path
+export PATH=${PATH}:/usr/local/mysql/bin/         #to enabel the mysql path
+source ~/.zshrc
+
 
 mysql -u root -p (to enable mysql)
 create database databasename; (create database with name and add that name in settings.py)
